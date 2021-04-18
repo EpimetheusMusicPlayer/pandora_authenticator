@@ -22,7 +22,7 @@ Usage: pandora_authenticator [options] <email address> <password>
 |Exit code|Description|
 |---|---|
 |`0`|No issues occurred.|
-|`2`|Username and password arguments were required (for a non-interactive session), but none were provided.|
+|`2`|Invalid argument(s) were given.|
 |`3`|There was a connection issue.|
 |`4`|Invalid username or password.|
 |`5`|A login was attempted from a place outside the US.|

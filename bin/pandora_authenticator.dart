@@ -8,7 +8,12 @@ import 'package:pandora_authenticator/pandora_authenticator.dart'
 
 Future<void> main(List<String> argumentStrings) async {
   // Parse the argument strings.
-  final arguments = pandora_authenticator.Arguments(argumentStrings);
+  final pandora_authenticator.Arguments arguments;
+  try {
+    arguments = pandora_authenticator.Arguments(argumentStrings);
+  } on FormatException catch (e) {
+    exit(_handleError(pandora_authenticator.Error.invalidArguments(e.message)));
+  }
 
   // If the version should be shown, do that and exit.
   if (arguments.showVersion) {

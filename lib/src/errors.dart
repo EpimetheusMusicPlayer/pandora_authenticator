@@ -4,7 +4,9 @@ class Error {
 
   const Error._(this.errorCode, this.message);
 
-  static const missingCredentials = Error._(2,
+  const Error.invalidArguments(String message) : this._(2, message);
+
+  static const missingCredentials = Error.invalidArguments(
       'Please provide an email address and password (or use interactive mode).');
 
   static const network =
