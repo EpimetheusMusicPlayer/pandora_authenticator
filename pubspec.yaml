@@ -1,0 +1,19 @@
+name: pandora_authenticator
+description: A CLI tool to authenticate with Pandora and output an authentication token to be used with their various APIs.
+version: 1.0.0
+homepage: https://github.com/EpimetheusMusicPlayer/pandora_authenticator
+
+publish_to: none
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  args: ^2.0.0
+  iapetus:
+    git:
+      url: 'git://github.com/EpimetheusMusicPlayer/Iapetus.git'
+      ref: 'f88b94809ebcbc65ee9779b4e0fd38f4f26039ec'
+
+dev_dependencies:
+  lint: ^1.5.3
