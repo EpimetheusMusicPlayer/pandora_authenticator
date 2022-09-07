@@ -12,7 +12,7 @@ dependencies:
   args: ^2.0.0
   iapetus:
     git:
-      url: 'git://github.com/EpimetheusMusicPlayer/Iapetus.git'
+      url: 'https://github.com/EpimetheusMusicPlayer/Iapetus.git'
       ref: 'f88b94809ebcbc65ee9779b4e0fd38f4f26039ec'
 
 dev_dependencies:
